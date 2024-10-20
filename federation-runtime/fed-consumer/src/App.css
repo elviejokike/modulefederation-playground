@@ -7,11 +7,25 @@ body {
 
 .content {
   display: flex;
-  min-height: 100vh;
   line-height: 1.1;
   text-align: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin: 10px;
 }
 
 .content h1 {
