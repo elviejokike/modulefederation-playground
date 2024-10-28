@@ -1,5 +1,6 @@
 import { embedDashboard } from "@superset-ui/embedded-sdk";
 import axios from 'axios';
+import React from "react";
 import rison from "rison";
 
 const supersetUrl = 'http://localhost:8088'
@@ -119,12 +120,16 @@ async function initDashboard() {
         iframe.style.width = '1200px'; // Set the width of the iframe
         iframe.style.minHeight = '600px'; // Set the height of the iframe
     }
+
   })
 
 };
 
 export default function Comp2(props:any) {
-    initDashboard ()
+    React.useEffect(
+        () => { initDashboard () }, 
+        props
+    );
     return (
         <div style={{color:props.color, fontSize: props.fontSize}}>
             <div id='superset-container'></div>

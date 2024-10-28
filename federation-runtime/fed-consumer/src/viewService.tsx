@@ -1,18 +1,8 @@
-import { init, loadRemote } from "@module-federation/enhanced/runtime";
-import React, { Suspense, lazy } from "react";
+import { loadRemote } from "@module-federation/enhanced/runtime";
+import { default as React, Suspense, lazy } from "react";
+'react-dom'
 
 async function lazyRemoteModule(module:string) {
-  
-  init({
-    name: "@views",
-    remotes: [
-      {
-        name: "fed_provider",  //primitives
-        entry: "http://localhost:3000/mf-manifest.json"
-      }
-    ]
-  });
-
   return loadRemote<{default: typeof React.Component}>(module) as Promise<{default: typeof React.Component}>
 }
 
