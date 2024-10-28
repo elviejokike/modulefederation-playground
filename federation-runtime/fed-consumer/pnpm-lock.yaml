@@ -17,6 +17,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      rison:
+        specifier: ^0.1.1
+        version: 0.1.1
     devDependencies:
       '@loadable/component':
         specifier: ^5.16.4
@@ -593,6 +596,9 @@ packages:
 
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
+
+  rison@0.1.1:
+    resolution: {integrity: sha512-8C+/PKKTaAYE2quDtOUwny/eQpNn9YGby7T80wntbVWSGvw0aUT9M0YgLdLkUgIQzQwaB1ZTr80rwLVKyohHig==}
 
   safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
@@ -1273,6 +1279,8 @@ snapshots:
       supports-preserve-symlinks-flag: 1.0.0
 
   rfdc@1.4.1: {}
+
+  rison@0.1.1: {}
 
   safe-buffer@5.2.1: {}
 
